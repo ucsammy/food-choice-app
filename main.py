@@ -62,9 +62,21 @@ pizza_spots_vacaville = [
     "BJ's Restaurant & Brewhouse",
     "Pizza Twist"
 ]
+italian_spots_vacaville = [
+     "Fuso Italian Restaurant",
+    "Pietro's No. 1",
+    "Pietro's No. 2",
+    "La Borgata Italian Deli",
+    "Napoli Pizzeria",
+    "Amici's East Coast Pizzeria",
+    "Olive Garden Italian Restaurant",
+    "Mary's Pizza Shack",
+    "Cenario's Pizza",
+    "Round Table Pizza"
+]
 
 
-print("Categories of food we have is: Boba, Burgers, Mexican, Chinese, Pizza")
+print("Categories of food we have is: Boba, Burgers, Mexican, Chinese, Pizza, Italian")
 user_input = input("What category of food do you want? ").lower()
 
 # Use match-case to print the places based on the category
@@ -79,6 +91,8 @@ match user_input:
         print("Here is your first chinese spot!: ", random.choice(chinese_spots_vacaville))
     case "pizza":
         print("Here is your first pizza spot!: ", random.choice(pizza_spots_vacaville))
+    case "italian":
+        print("Here is your first italian spot!: ", random.choice(italian_spots_vacaville))
     case _ :
         print("try again")
 
